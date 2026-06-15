@@ -1,0 +1,20 @@
+@media (max-width: 900px) {
+  .product-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .banner { height: 400px; }
+  .section { padding: 56px 20px; }
+  .fab-top { bottom: 24px; right: 24px; }
+}
+
+@media (max-width: 600px) {
+  .nav { display: none; }
+  .menu-btn { display: flex; }
+  .mobile-nav { display: flex; }
+
+  .product-grid { grid-template-columns: 1fr; gap: 16px; }
+  .banner { height: 340px; }
+  .section { padding: 40px 16px; }
+  .section-header { margin-bottom: 36px; }
+  .card-body { padding: 16px; }
+  .footer-inner { flex-direction: column; text-align: center; }
+  .fab-top { bottom: 20px; right: 20px; width: 40px; height: 40px; font-size: 1rem; }
+}

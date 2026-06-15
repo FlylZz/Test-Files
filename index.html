@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MinimalStore</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">◆</span>MinimalStore
+      </a>
+      <nav class="nav" id="desktopNav">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#shop" class="nav-link" data-section="shop">Shop</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="cart">
+          🛒<span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#home" class="nav-link mobile-nav-item" data-section="home">Home</a>
+      <a href="#shop" class="nav-link mobile-nav-item" data-section="shop">Shop</a>
+      <a href="#about" class="nav-link mobile-nav-item" data-section="about">About</a>
+      <a href="#contact" class="nav-link mobile-nav-item" data-section="contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="banner" id="home">
+    <div class="banner-content">
+      <h1>Live Comfortably</h1>
+      <p>Discover furniture that blends minimalist design with everyday function.</p>
+      <a href="#shop" class="btn btn-primary">Shop Collection →</a>
+    </div>
+  </section>
+
+  <section class="section" id="shop">
+    <div class="section-header">
+      <h2>Our Products</h2>
+      <p>Thoughtfully designed pieces for every room</p>
+    </div>
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-chip active" data-filter="All">All</button>
+      <button class="filter-chip" data-filter="New">New</button>
+      <button class="filter-chip" data-filter="Hot">Hot</button>
+      <button class="filter-chip" data-filter="Sale">Sale</button>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <footer class="footer" id="about">
+    <div class="footer-inner">
+      <span class="footer-brand">◆ MinimalStore</span>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Shipping Info</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 MinimalStore. All rights reserved.</p>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <button class="fab-top" id="fabTop" aria-label="back to top">↑</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
