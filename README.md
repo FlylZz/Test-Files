@@ -50,4 +50,3 @@ Open `index.html` in any browser — no dependencies.
 1. 任务拆分：将测试要求拆解为 HTML 结构、CSS 样式、JS 逻辑三个模块，分步实现
 2. 代码生成：根据测试要求生成页面框架，人工调整细节（文案、间距、颜色）
 3. 文件解耦：将单文件代码拆分为 HTML / CSS / JS 独立文件，降低耦合
-4. 代码去 AI 化：将 ES6+ 语法（箭头函数、模板字符串、const/let、Map/Set）改写为 ES5 风格，去除机器生成的注释格式，使代码更贴近手写风格
